@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="361.0" prefWidth="313.0" style="-fx-background-color: #6495ED;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cep.controller.LoginController">
+    <stylesheets>
+        <URL value="@/styles/Styles.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="338.0" fitWidth="313.0" layoutX="34.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="23.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../images/controle-vendas.png" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" layoutY="261.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button fx:id="btnEntrar" mnemonicParsing="false" onAction="#entrar" prefHeight="40.0" prefWidth="120.0" style="-fx-background-radius: 20;" text="Entrar">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/Apply.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <Reflection />
+               </effect>
+            </Button>
+            <Button fx:id="btnSair" layoutX="136.0" layoutY="47.0" mnemonicParsing="false" onAction="#sair" prefHeight="40.0" prefWidth="120.0" style="-fx-background-radius: 20;" text="Sair">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/Exit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <Reflection />
+               </effect>
+            </Button>
+         </children>
+      </HBox>
+      <Label fx:id="lblMensagem" layoutX="27.0" layoutY="213.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+      <HBox alignment="CENTER" prefHeight="61.0" prefWidth="313.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="tfUsuario" prefHeight="26.0" prefWidth="273.0" promptText="Login de acesso..." style="-fx-background-radius: 20;">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutY="61.0" prefHeight="61.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <PasswordField fx:id="pfSenha" prefHeight="26.0" prefWidth="272.0" promptText="Senha de acesso..." style="-fx-background-radius: 20;">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </PasswordField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutY="122.0" prefHeight="61.0" prefWidth="313.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button fx:id="btnRecuperarSenha" disable="true" mnemonicParsing="false" onAction="#recuperarSenha" prefHeight="40.0" prefWidth="130.0" style="-fx-background-radius: 20;" text="Recuperar">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/Repair.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnCadastrarUsuario" mnemonicParsing="false" onAction="#cadastrarUsuario" prefHeight="40.0" prefWidth="130.0" style="-fx-background-radius: 20;" text="Cadastrar">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/user_add.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

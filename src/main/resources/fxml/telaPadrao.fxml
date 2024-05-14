@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<Accordion maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="634.0" style="-fx-background-color: #6495ED;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cep.controller.TelaPadraoController">
+  <panes>
+    <TitledPane animated="false" text="Menu">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #6495ED;">
+               <children>
+                  <HBox alignment="CENTER" layoutX="199.0" layoutY="111.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="99.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="111.0">
+                     <children>
+                        <Button fx:id="btnCliente" mnemonicParsing="false" prefHeight="40.0" prefWidth="116.0" style="-fx-background-radius: 20;" text="Cliente">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/Boss.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnProduto" layoutX="268.0" layoutY="42.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="116.0" style="-fx-background-radius: 20;" text="Produto">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/lorry.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnVenda" layoutX="299.0" layoutY="42.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="116.0" style="-fx-background-radius: 20;" text="Venda">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/Shopping%20cart.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnPagamento" layoutX="316.0" layoutY="59.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="116.0" style="-fx-background-radius: 20;" text="Pagamento">
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/Dollar.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="btnSobre" mnemonicParsing="false" onAction="#exibirInformacao" prefHeight="40.0" prefWidth="120.0" style="-fx-background-radius: 20;" text="Sobre">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/Info.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnSair" layoutX="330.0" layoutY="42.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="116.0" style="-fx-background-radius: 20;" text="Sair">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/cancel.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children></AnchorPane>
+      </content>
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/Home.png" />
+               </image>
+            </ImageView>
+         </graphic>
+    </TitledPane>
+    <TitledPane animated="false" text="Usuário">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #6495ED;">
+               <children>
+                  <Label layoutX="7.0" layoutY="4.0" text="Id">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tfId" layoutX="7.0" layoutY="24.0" style="-fx-background-radius: 20;" />
+                  <HBox alignment="CENTER" layoutX="21.4" layoutY="291.4" prefHeight="77.0" prefWidth="611.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="281.0">
+                     <children>
+                        <Button fx:id="btnCadastrar" mnemonicParsing="false" onAction="#cadastrar" prefHeight="40.0" prefWidth="120.0" style="-fx-background-radius: 20;" text="Cadastrar">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/user_add.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                        <Button fx:id="btnNovo" layoutX="251.0" layoutY="23.0" mnemonicParsing="false" onAction="#limparCamposFormulario" prefHeight="40.0" prefWidth="120.0" style="-fx-background-radius: 20;" text="Novo">
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/Create.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Label layoutX="186.0" layoutY="6.0" text="Descrição">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tfDescricao" layoutX="186.0" layoutY="24.0" prefHeight="26.0" prefWidth="249.0" style="-fx-background-radius: 20;" />
+                  <Label layoutX="445.0" layoutY="5.0" text="Nascimento">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="dpNascimento" layoutX="447.0" layoutY="24.0" prefHeight="26.0" prefWidth="175.0" />
+                  <TextField fx:id="tfEndereco" layoutX="7.0" layoutY="88.0" prefHeight="26.0" prefWidth="418.0" style="-fx-background-radius: 20;" />
+                  <Label layoutX="5.0" layoutY="60.0" text="Endereço">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <TextField fx:id="tfComplemento" layoutX="515.0" layoutY="88.0" prefHeight="26.0" prefWidth="107.0" style="-fx-background-radius: 20;" />
+                  <TextField fx:id="tfNumero" layoutX="445.0" layoutY="88.0" prefHeight="26.0" prefWidth="61.0" style="-fx-background-radius: 20;" />
+                  <Label layoutX="447.0" layoutY="60.0" text="Nº">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="514.0" layoutY="61.0" text="Complemento">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="11.0" layoutY="127.0" text="Bairro">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tfBairro" layoutX="7.0" layoutY="148.0" style="-fx-background-radius: 20;" />
+                  <TextField fx:id="tfCidade" layoutX="186.0" layoutY="148.0" style="-fx-background-radius: 20;" />
+                  <TextField fx:id="tfCep" layoutX="363.0" layoutY="148.0" style="-fx-background-radius: 20;" />
+                  <ComboBox fx:id="cbUf" layoutX="539.0" layoutY="148.0" prefHeight="26.0" prefWidth="82.0" />
+                  <Label layoutX="188.0" layoutY="128.0" text="Cidade">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="363.0" layoutY="129.0" text="Cep">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="539.0" layoutY="128.0" text="Uf">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="8.0" layoutY="177.0" text="Telefone">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tfTelefone" layoutX="7.0" layoutY="203.0" style="-fx-background-radius: 20;" />
+                  <TextField fx:id="tfEmail" layoutX="186.0" layoutY="203.0" prefHeight="26.0" prefWidth="275.0" style="-fx-background-radius: 20;" />
+                  <Label layoutX="188.0" layoutY="177.0" text="Email">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="cbPermissoes" layoutX="473.0" layoutY="203.0" prefWidth="150.0" />
+                  <Label layoutX="474.0" layoutY="178.0" text="Permissões">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="11.0" layoutY="237.0" text="Login">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tfLogin" layoutX="7.0" layoutY="255.0" prefHeight="26.0" prefWidth="343.0" style="-fx-background-radius: 20;" />
+                  <PasswordField fx:id="pfSenha" layoutX="360.0" layoutY="255.0" prefHeight="26.0" prefWidth="263.0" style="-fx-background-radius: 20;" />
+                  <Label layoutX="360.0" layoutY="238.0" text="Senha">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+      </content>
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/Male.png" />
+               </image>
+            </ImageView>
+         </graphic>
+    </TitledPane>
+    <TitledPane animated="false" style="-fx-background-color: #6495ED;" text="Consultar">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #6495ED;">
+               <children>
+                  <TableView fx:id="tabelaUsuario" layoutY="-2.0" prefHeight="265.0" prefWidth="634.0" style="-fx-background-color: #6495ED;" />
+                  <HBox alignment="CENTER" layoutX="35.4" layoutY="263.0" prefHeight="54.0" prefWidth="590.0" AnchorPane.bottomAnchor="51.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/View.png" />
+                           </image>
+                        </ImageView>
+                        <TextField fx:id="tfPesquisa" onKeyPressed="#pesquisarRegistro" prefHeight="26.0" prefWidth="528.0" style="-fx-background-radius: 20;" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="14.0" layoutY="307.0" prefHeight="48.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="309.6">
+                     <children>
+                        <Button fx:id="btnExcluir" layoutX="285.0" layoutY="16.0" mnemonicParsing="false" onAction="#excluir" prefHeight="40.0" prefWidth="120.0" style="-fx-background-radius: 20;" text="Excluir">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/user_delete.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children></AnchorPane>
+      </content>
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/View.png" />
+               </image>
+            </ImageView>
+         </graphic>
+    </TitledPane>
+  </panes>
+</Accordion>

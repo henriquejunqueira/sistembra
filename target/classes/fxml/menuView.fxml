@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="551.0" prefWidth="950.0" style="-fx-background-color: #6495ED;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cep.controller.MenuViewController">
+    <stylesheets>
+        <URL value="@/styles/menuview.css" />
+    </stylesheets>
+   <children>
+      <HBox alignment="CENTER" layoutX="200.0" layoutY="150.0" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #6495ED;" AnchorPane.bottomAnchor="451.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-10.0">
+         <children>
+            <Button fx:id="btnUsuario" mnemonicParsing="false" onAction="#carregarJanela" prefHeight="40.0" prefWidth="150.0" style="-fx-background-radius: 20;" text="Usuário">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/Male.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <Reflection />
+               </effect>
+            </Button>
+            <Button fx:id="btnCliente" layoutX="279.0" layoutY="47.0" mnemonicParsing="false" onAction="#carregarJanela" prefHeight="40.0" prefWidth="150.0" style="-fx-background-radius: 20;" text="Cliente">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/Boss.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <Reflection />
+               </effect>
+            </Button>
+            <Button fx:id="btnProduto" layoutX="310.0" layoutY="47.0" mnemonicParsing="false" onAction="#carregarJanela" prefHeight="40.0" prefWidth="150.0" style="-fx-background-radius: 20;" text="Produto">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/lorry.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <Reflection />
+               </effect>
+            </Button>
+            <Button fx:id="btnPagamento" layoutX="372.0" layoutY="47.0" mnemonicParsing="false" onAction="#carregarJanela" prefHeight="40.0" prefWidth="150.0" style="-fx-background-radius: 20;" text="Pagamento">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/Dollar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <Reflection />
+               </effect>
+            </Button>
+            <Button fx:id="btnVenda" layoutX="341.0" layoutY="47.0" mnemonicParsing="false" onAction="#carregarJanela" prefHeight="40.0" prefWidth="150.0" style="-fx-background-radius: 20;" text="Venda">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/Shopping%20cart.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <Reflection />
+               </effect>
+            </Button>
+            <Button fx:id="btnRelatorio" layoutX="690.0" layoutY="40.0" mnemonicParsing="false" onAction="#carregarJanela" prefHeight="40.0" prefWidth="150.0" style="-fx-background-radius: 20;" text="Relatório">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/Report.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+               <effect>
+                  <Reflection />
+               </effect>
+            </Button>
+            <Button fx:id="btnSobre" layoutX="403.0" layoutY="47.0" mnemonicParsing="false" onAction="#carregarJanela" prefHeight="40.0" prefWidth="150.0" style="-fx-background-radius: 20;" text="Sobre">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/Info.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <Reflection />
+               </effect>
+            </Button>
+            <Button fx:id="btnSair" layoutX="456.0" layoutY="47.0" mnemonicParsing="false" onAction="#fecharJanela" prefHeight="40.0" prefWidth="150.0" style="-fx-background-radius: 20;" text="Sair">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/Exit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <Reflection />
+               </effect>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutY="168.0" prefHeight="216.0" prefWidth="950.0" style="-fx-background-color: #6495ED;" AnchorPane.bottomAnchor="167.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ImageView fitHeight="212.0" fitWidth="424.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/controle-vendas.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" text="SistemBra">
+               <font>
+                  <Font name="System Bold Italic" size="64.0" />
+               </font>
+               <effect>
+                  <Reflection fraction="1.0" />
+               </effect>
+            </Label>
+            <ImageView fitHeight="40.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/Shopping%20cart.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
